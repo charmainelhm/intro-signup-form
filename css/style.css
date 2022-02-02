@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #3e3c49;
+  --color-tertiary: #b9b6d3;
+  --color-accent-blue: #6055a5;
+  --color-accent-green: #38cc8c;
+  --color-accent-red: #ff7a7a;
+  --color-shadow-green: #6dcca2;
+  --color-shadow-red: #dc6567;
+
+  --fs-xl: 4.8rem;
+  --fs-600: 2.5rem;
+  --fs-500: 1.8rem;
+  --fs-400: 1.6rem;
+  --fs-300: 1.4rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: var(--fs-400);
+}
+
+h1 {
+  font-size: var(--fs-600);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
