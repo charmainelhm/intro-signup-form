@@ -39,11 +39,16 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: var(--fs-400);
   background-color: var(--color-accent-red);
-  line-height: 2;
+  background-image: url(../images/bg-intro-mobile.png);
 }
 
 h1 {
   font-size: var(--fs-600);
+  line-height: 3.5rem;
+}
+
+p {
+  line-height: 2.5rem;
 }
 
 /* Attribution */
@@ -61,7 +66,7 @@ h1 {
   border: 0;
   border-radius: 5px;
   width: 100%;
-  color: white;
+  color: var(--color-primary);
   background-color: black;
 }
 
@@ -76,6 +81,17 @@ h1 {
 
 .btn--green:hover {
   background-color: var(--color-accent-green-light);
+}
+
+/* Page header */
+.header {
+  text-align: center;
+  color: var(--color-primary);
+  padding: 5rem 0;
+}
+
+.header__description {
+  opacity: 0.8;
 }
 
 /* Form Card */
@@ -115,12 +131,31 @@ h1 {
   margin: 0 auto;
   text-align: center;
   color: var(--color-tertiary);
+  opacity: 0.8;
   font-size: var(--fs-200);
   font-weight: 600;
+  line-height: 2rem;
 }
 
 .terms__link {
   color: var(--color-accent-red);
   font-weight: 700;
   text-decoration: none;
+}
+
+/* Trial Message */
+.trial {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.trial__msg {
+  width: 60%;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.trial__msg > span {
+  opacity: 0.8;
+  font-weight: 400;
 }
