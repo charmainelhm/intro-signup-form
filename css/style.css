@@ -13,7 +13,8 @@
   --fs-600: 2.5rem;
   --fs-500: 1.8rem;
   --fs-400: 1.6rem;
-  --fs-300: 1.4rem;
+  --fs-300: 1.5rem;
+  --fs-200: 1.1rem;
 }
 
 *,
@@ -22,6 +23,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
 }
 
 /* Typography */
@@ -33,6 +39,7 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: var(--fs-400);
   background-color: var(--color-accent-red);
+  line-height: 2;
 }
 
 h1 {
@@ -50,7 +57,7 @@ h1 {
 
 /* Button Design*/
 .btn {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   border: 0;
   border-radius: 5px;
   width: 100%;
@@ -69,4 +76,51 @@ h1 {
 
 .btn--green:hover {
   background-color: var(--color-accent-green-light);
+}
+
+/* Form Card */
+.card {
+  margin-top: 2rem; /* to be removed */
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+
+.card form > * {
+  margin-bottom: 1.8rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1.5px solid var(--color-tertiary);
+  border-radius: 5px;
+  opacity: 60%;
+}
+
+.form__input::placeholder {
+  color: var(--color-secondary);
+  /* opacity: 60%; */
+  font-weight: 700;
+}
+
+.form__submit-btn {
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.terms__msg {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-tertiary);
+  font-size: var(--fs-200);
+  font-weight: 600;
+}
+
+.terms__link {
+  color: var(--color-accent-red);
+  font-weight: 700;
+  text-decoration: none;
 }
